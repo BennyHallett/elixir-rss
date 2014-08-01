@@ -12,4 +12,16 @@ defmodule RSS do
     """
   end
 
+  def channel(title, link, desc, date, lang) do
+    """
+    <channel>
+      <title>#{title}</title>
+      <link>#{link}</link>
+      <description>#{desc}</description>
+      <lastBuildDate>#{date}</lastBuildDate>
+      <language>#{lang}</language>
+    </channel>
+    """
+  end
+
 end
