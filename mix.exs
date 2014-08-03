@@ -24,6 +24,7 @@ defmodule RSS.Mixfile do
   defp package do
     %{
       licenses: ["MIT"],
+      contributors: ["Benny Hallett"],
       links: %{ "Github" => "https://github.com/bennyhallett/elixir-rss" }
     }
   end
