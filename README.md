@@ -3,6 +3,8 @@ elixir-rss
 
 Simple RSS feed builder for Elixir
 
+[![Build Status](https://api.travis-ci.org/BennyHallett/elixir-rss.svg?branch=build)](https://api.travis-ci.org/BennyHallett/elixir-rss)
+
 ## Installing
 
 Add `rss` to your mix project dependencies
