@@ -4,6 +4,7 @@ elixir-rss
 Simple RSS feed builder for Elixir
 
 [![Build Status](https://travis-ci.org/BennyHallett/elixir-rss.svg?branch=master)](https://travis-ci.org/BennyHallett/elixir-rss)
+[![Package](http://img.shields.io/hexpm/v/rss.svg)](https://hex.pm/packages/rss)
 
 ## Installing
 
