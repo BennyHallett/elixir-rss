@@ -8,3 +8,5 @@ otp_release:
   - 18.0
 
 script: mix test --no-start
+
+sudo: false # to use Travis' container based environment
