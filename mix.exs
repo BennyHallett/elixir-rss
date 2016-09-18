@@ -4,7 +4,11 @@ defmodule RSS.Mixfile do
   def project do
     [app: :rss,
      version: "0.2.1",
+<<<<<<< HEAD
      elixir: "~> 1.2",
+=======
+     elixir: "~> 1.3",
+>>>>>>> Minor fixes
      package: package,
      docs: [readme: true, main: "README.md"],
      description: """
@@ -24,7 +28,7 @@ defmodule RSS.Mixfile do
   defp package do
     %{
       licenses: ["MIT"],
-      contributors: ["Benny Hallett"],
+      contributors: ["Benny Hallett", "Mike Kreuzer"],
       links: %{ "Github" => "https://github.com/bennyhallett/elixir-rss" }
     }
   end

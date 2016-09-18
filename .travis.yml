@@ -1,6 +1,7 @@
 language: elixir
 
 elixir:
+<<<<<<< HEAD
   - 1.2.5
 
 otp_release:
@@ -9,3 +10,13 @@ otp_release:
 script: mix test --no-start
 
 sudo: false # to use Travis' container based environment
+=======
+  - 1.3.2
+
+otp_release:
+  - 19.0
+
+script: mix test --no-start
+
+sudo: false
+>>>>>>> Minor fixes
