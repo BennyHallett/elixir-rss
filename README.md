@@ -31,13 +31,25 @@ RSS provides 3 simple functions for building RSS feeds
 To create the channel section, use [`RSS.channel/5`](https://github.com/BennyHallett/elixir-rss/blob/master/lib/rss.ex#L25-L33)
 
 ```elixir
-channel = RSS.channel("Title", "http://link.to.site", "Description", "Date in RFC 882 format", "lang (en-us)")
+channel = RSS.channel(
+  "Title",
+  "http://link.to.site",
+  "Description",
+  "Date in RFC 882 format",
+  "en-us" # Or any other valid ISO-639 language code
+)
 ```
 
 You only need to do this once. From here on in, you can create items using [`RSS.item/5`](https://github.com/BennyHallett/elixir-rss/blob/master/lib/rss.ex#L13-L23).
 
 ```elixir
-item = RSS.item("Title", "Description", "Date in RFC 882 format", "http://link.to.site/post", "guid-1234-aa"
+item = RSS.item(
+  "Title",
+  "Description",
+  "Date in RFC 882 format",
+  "http://link.to.site/post", # Link to the item
+  "http://link.to.site/post" # Permalink, that uniquely identifies the item (can be the same as link above)
+)
 ```
 
 Once you have a list of items, in a variable names `items` perhaps, you can build the full feed by using [`RSS.feed/2`](https://github.com/BennyHallett/elixir-rss/blob/master/lib/rss.ex#L3-L11)
