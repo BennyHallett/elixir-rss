@@ -32,6 +32,7 @@ To create the channel section, use [`RSS.channel/5`](https://github.com/BennyHal
 
 ```elixir
 <<<<<<< HEAD
+<<<<<<< HEAD
 channel = RSS.channel(
   "Title",
   "http://link.to.site",
@@ -42,11 +43,15 @@ channel = RSS.channel(
 =======
 channel = RSS.channel("Title", "http://link.to.site", "Description", "Date in RFC 1123 or RFC 882 format", "en-us")
 >>>>>>> Minor fixes
+=======
+channel = RSS.channel("Title", "http://link.to.site", "Description", "Date in RFC 1123 or RFC 882 format", "en-us")
+>>>>>>> origin/cdata-lang-and-version
 ```
 
 You only need to do this once. From here on in, you can create items using [`RSS.item/5`](https://github.com/BennyHallett/elixir-rss/blob/master/lib/rss.ex#L13-L23).
 
 ```elixir
+<<<<<<< HEAD
 <<<<<<< HEAD
 item = RSS.item(
   "Title",
@@ -58,6 +63,9 @@ item = RSS.item(
 =======
 item = RSS.item("Title", "Description", "Date in RFC 1123 or RFC 882 format", "http://link.to.site/post", "guid-1234-aa"
 >>>>>>> Minor fixes
+=======
+item = RSS.item("Title", "Description", "Date in RFC 1123 or RFC 882 format", "http://link.to.site/post", "guid-1234-aa"
+>>>>>>> origin/cdata-lang-and-version
 ```
 
 Once you have a list of items, in a variable names `items` perhaps, you can build the full feed by using [`RSS.feed/2`](https://github.com/BennyHallett/elixir-rss/blob/master/lib/rss.ex#L3-L11)

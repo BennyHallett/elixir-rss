@@ -5,10 +5,14 @@ defmodule RSS.Mixfile do
     [app: :rss,
      version: "0.2.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
      elixir: "~> 1.2",
 =======
      elixir: "~> 1.3",
 >>>>>>> Minor fixes
+=======
+     elixir: "~> 1.3",
+>>>>>>> origin/cdata-lang-and-version
      package: package,
      docs: [readme: true, main: "README.md"],
      description: """
