@@ -4,7 +4,7 @@ defmodule RSS.Mixfile do
   def project do
     [app: :rss,
      version: "0.2.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.4",
      package: package,
      docs: [readme: true, main: "README.md"],
      description: """

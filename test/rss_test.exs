@@ -11,7 +11,7 @@ defmodule RSSTest do
     assert RSS.item(title, desc, pubDate, link, guid) == """
     <item>
       <title>#{title}</title>
-      <description>[CDATA[ #{desc} ]]</description>
+      <description><![CDATA[#{desc}]]></description>
       <pubDate>#{pubDate}</pubDate>
       <link>#{link}</link>
       <guid>#{guid}</guid>
@@ -51,14 +51,14 @@ defmodule RSSTest do
       <language>en-us</language>
     <item>
       <title>Post 2</title>
-      <description>[CDATA[ The second post ]]</description>
+      <description><![CDATA[The second post]]></description>
       <pubDate>Mon, 12 Sep 2005 18:37:00 GMT</pubDate>
       <link>http://test.blog/two</link>
       <guid>http://test.blog/two</guid>
     </item>
     <item>
       <title>Post 1</title>
-      <description>[CDATA[ The first post ]]</description>
+      <description><![CDATA[The first post]]></description>
       <pubDate>Sun, 11 Sep 2005 18:37:00 GMT</pubDate>
       <link>http://test.blog/one</link>
       <guid>http://test.blog/one</guid>

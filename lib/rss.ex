@@ -14,7 +14,7 @@ defmodule RSS do
     """
     <item>
       <title>#{title}</title>
-      <description>[CDATA[ #{desc} ]]</description>
+      <description><![CDATA[#{desc}]]></description>
       <pubDate>#{pubDate}</pubDate>
       <link>#{link}</link>
       <guid>#{guid}</guid>
