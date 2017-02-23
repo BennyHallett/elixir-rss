@@ -1,5 +1,11 @@
 defmodule RSS do
 
+  @moduledoc """
+  RSS v2.0 Feed Generation Library
+
+  Based on specification at: https://validator.w3.org/feed/docs/rss2.html
+  """
+
   def feed(channel, items) do
     """
     <?xml version="1.0" encoding="utf-8"?>
