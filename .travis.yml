@@ -1,32 +1,13 @@
 language: elixir
-<<<<<<< HEAD
-
-elixir:
-<<<<<<< HEAD
-  - 1.2.5
-
-otp_release:
-  - 18.3
-
-script: mix test --no-start
 
 sudo: false # to use Travis' container based environment
-=======
-  - 1.3.2
-
-=======
 
 elixir:
   - 1.3.2
 
->>>>>>> origin/cdata-lang-and-version
 otp_release:
   - 19.0
 
 script: mix test --no-start
 
 sudo: false
-<<<<<<< HEAD
->>>>>>> Minor fixes
-=======
->>>>>>> origin/cdata-lang-and-version
