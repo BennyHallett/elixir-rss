@@ -3,3 +3,5 @@
 * Individual elements need testing
 * Need to update the version number
 * Need to update Readme
+* typespecs
+* Run dialyzer

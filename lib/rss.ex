@@ -5,6 +5,20 @@ defmodule RSS do
   RSS v2.0 Feed Generation Library
 
   Based on specification at: https://validator.w3.org/feed/docs/rss2.html
+
+  Usage:
+
+  ```
+    channel = RSS.Channel.new title: "My cool blog"
+    item = RSS.Item.new title: "My post"
+    feed = RSS.Feed.new channel: channel, items: [item]
+    RSS.generate(feed)
+  ```
+
+  See the `RSS.Channel` and `RSS.Item` modules for available fields.
+  """
+  @doc """
+  Generate an RSS XML document given a `RSS.Feed`
   """
   def generate(feed) do
     {:rss, %{version: "2.0"}, inner_content(feed)}
