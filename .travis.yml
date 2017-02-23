@@ -1,7 +1,5 @@
 language: elixir
 
-sudo: false # to use Travis' container based environment
-
 elixir:
   - 1.3.2
 
