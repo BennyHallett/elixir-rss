@@ -17,6 +17,8 @@ defmodule RSS do
 
   See the `RSS.Channel` and `RSS.Item` modules for available fields.
   """
+
+  @spec generate(%RSS.Feed{}) :: String.t()
   @doc """
   Generate an RSS XML document given a `RSS.Feed`
   """

@@ -1,7 +1,1 @@
-* Needs @docs
-* Needs doctests
-* Individual elements need testing
-* Need to update the version number
-* Need to update Readme
-* typespecs
-* Run dialyzer
+channel is the outer element I believe, not an inner one

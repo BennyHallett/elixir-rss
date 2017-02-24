@@ -6,6 +6,12 @@ Simple RSS feed builder for Elixir
 [![Build Status](https://travis-ci.org/BennyHallett/elixir-rss.svg?branch=master)](https://travis-ci.org/BennyHallett/elixir-rss)
 [![Package](http://img.shields.io/hexpm/v/rss.svg)](https://hex.pm/packages/rss)
 
+## NOTE
+
+We're undergoing some changes to the RSS library at the moment, including actually supporting the RSS2 spec and adding parsing and validating.
+
+As such, the `master` branch may be unstable for a week or so.
+
 ## Installing
 
 To add `rss` to your mix project dependencies just edit your `mix.exs`
@@ -45,6 +51,21 @@ Once you have a list of items, in a variable names `items` perhaps, you can buil
 ```elixir
 feed = RSS.feed(channel, items)
 ```
+
+## Master Branch Usage
+
+The changes in the `master` branch significantly alter how RSS is generated using this library.
+
+```elixir
+channel = RSS.Channel.new(title: "A good blog")
+item = RSS.Item.new(title: "A good post")
+feed = RSS.Feed.new(channel: channel, items: [item])
+RSS.generate(feed)
+```
+
+Note that the above RSS won't be 100% valid (required fields are missing) - I kept it small for example purposes. The validation coming soon will ensure that the document is valid before generating it.
+
+The module doc for `RSS.Channel` and `RSS.Item` explain the full list of available fields.
 
 ## Links
 

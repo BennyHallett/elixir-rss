@@ -17,7 +17,12 @@ defmodule RSS.Mixfile do
     [applications: []]
   end
 
-  defp deps, do: [{:xml_builder, "~> 0.0.9"}]
+  defp deps do
+    [
+      {:xml_builder, "~> 0.0.9"},
+      {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
+    ]
+  end
 
   defp package do
     %{
